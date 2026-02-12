@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Predizione prezzo Fiat</title>
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+<body>
+
+<div class="container">
+    <h2>Predici il prezzo della tua Fiat</h2>
+
+    <form method="POST">
+
+        <label for="model">Modello</label>
+        <select name="model" id="model" required>
+            <option value="">-- seleziona modello --</option>
+            <option value="pop">Pop</option>
+            <option value="lounge">Lounge</option>
+            <option value="sport">Sport</option>
+        </select>
+
+        <label for="engine_power">Potenza motore (CV)</label>
+        <input type="number" name="engine_power" id="engine_power" required>
+
+        <label for="transmission">Trasmissione</label>
+        <select name="transmission" id="transmission" required>
+            <option value="">-- seleziona trasmissione --</option>
+            <option value="manual">Manuale</option>
+            <option value="automatic">Automatica</option>
+        </select>
+
+        <label for="age_in_days">Età (giorni)</label>
+        <input type="number" name="age_in_days" id="age_in_days" required>
+
+        <label for="km">Chilometri</label>
+        <input type="number" name="km" id="km" required>
+
+        <label for="previous_owners">Numero proprietari precedenti</label>
+        <input type="number" name="previous_owners" id="previous_owners" required>
+
+        <label for="lat">Latitudine</label>
+        <input type="number" step="any" name="lat" id="lat" required>
+
+        <label for="lon">Longitudine</label>
+        <input type="number" step="any" name="lon" id="lon" required>
+
+        <button type="submit">Predici prezzo</button>
+    </form>
+
+    
+</div>
+
+</body>
+</html>
